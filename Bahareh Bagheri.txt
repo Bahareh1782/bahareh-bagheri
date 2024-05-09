@@ -1,0 +1,8 @@
+def delete(self,x):
+    if x <= self.num:
+        item1=self.Q[x]
+        item2=x+1
+        self.Q = self.Q[x] + self.Q[item2]
+    else:
+        raise Exception("error")
+    return self.Q , item1
